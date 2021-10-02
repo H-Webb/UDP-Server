@@ -1,4 +1,4 @@
-# Thoughts
+# 02/10/21
 
 ## Picking a framework
 After some light research, I found that Qt and ASIO::BOOST to be the larger contenders for networking frameworks. QT seems to be larger and bulkier than my needs where as BOOST has a slimmer overhead, and provides the needed features.
