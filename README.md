@@ -1,7 +1,7 @@
 # UDP-Server
 This project will focus on creating a custom/flexible UDP server. Implemented in C++ for practice with the language.
 
-##Goals
+## Goals
 - [ ] Have the server able to transmit data simple packets back and forth to a client.
 - [ ] Connect multiple clients together.
 - [ ] Create a custom stack
