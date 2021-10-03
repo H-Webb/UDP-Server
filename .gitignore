@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Added libraries
+/b2
+/boost_1_77_0
