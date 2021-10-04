@@ -12,3 +12,14 @@ So far the builder is akin to many other builders such as MAKE. A defining featu
 As ASIO::Boost reccomends B2 when building with it, I shall use B2 going forward with this project.
 
 Installed locally, added to .gitignore as to allow freedom of installation by other users/devices
+
+## Day Total
+Hours: 2
+
+# 04/10/21
+
+## ASIO BOOST tutorials
+Starting the tutorial proved to be difficult. Despite the compatibility of Boost's ASIO and B2 libraries, getting used to the B2's JAM language proved slightly more time consuming than planned. This was due to having to learn how to appropriately implement my installation of GCC
+and b2.
+
+Now sorted, creating the first tutorial was simple!
