@@ -24,4 +24,10 @@ and b2.
 
 Now sorted, creating the first tutorial was simple!
 
+### Tutorial 1
+Time: 1 hour
+
+### Tutorial 2
+
+## Day Total
 Time: 1 hour
