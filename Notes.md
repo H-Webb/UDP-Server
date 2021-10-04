@@ -23,3 +23,5 @@ Starting the tutorial proved to be difficult. Despite the compatibility of Boost
 and b2.
 
 Now sorted, creating the first tutorial was simple!
+
+Time: 1 hour
