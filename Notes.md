@@ -27,7 +27,11 @@ Now sorted, creating the first tutorial was simple!
 ### Tutorial 1
 Time: 1 hour
 
-### Tutorial 2
+### Tutorial 2 & 3
+tut 2 went smoothly.
+Tutorial 3 took some time as I looking into the Bind functions, specifically their wider purpose and functionality. They seem like very useful operations, specifically for functions you have liitle to no control over and need to work with-in your limits. Or just to allow for more flexibility with-in your code without over encumbering your base.
+
+Time: 1 hour
 
 ## Day Total
-Time: 1 hour
+Time: 2 hour
