@@ -2,7 +2,40 @@
 #include <boost/asio.hpp>
 #include <boost/bind/bind.hpp>
 
-void print(const boost::system::error_code& /*e*/,
+class printer
+{
+public:
+  printer(boost::asio::io_context& io)
+   : timer_(io, boost::asio::chrono::seconds(1)),
+     count_(0)
+     {
+       timer_.async_wait(boost::bind(&printer::print, this));
+     }
+
+  ~printer()
+  {
+    std::cout << "Final count is " << count_ << std::endl;
+  }
+
+  void print()
+  {
+    if (count_ < 5)
+    {
+      std::cout << count_ << std::endl;
+      ++count_;
+
+      timer_.expires_at(timer_.expiry() + boost::asio::chrono::seconds(1));
+      timer_.async_wait(boost::bind(&printer::print, this));
+    }
+  }
+
+  private:
+  boost::asio::steady_timer timer_;
+  int count_;
+  };
+
+/*
+void print(const boost::system::error_code& /*e,
     boost::asio::steady_timer* t, int* count)
 {
   if (*count < 5)
@@ -21,19 +54,13 @@ void print(const boost::system::error_code& /*e*/,
   }
 
 }
+*/
 
-int main(){
+int main()
+{
   boost::asio::io_context io;
-  int count = 0;
-
-  boost::asio::steady_timer t(io, boost::asio::chrono::seconds(1));
-
-  t.async_wait(boost::bind(print,
-       boost::asio::placeholders::error, &t, &count));
-
+  printer p(io);
   io.run();
 
-  std::cout << "Final count is " << count << std::endl;
-  
   return 0;
 }
