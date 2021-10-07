@@ -35,3 +35,9 @@ Time: 1 hour
 
 ## Day Total
 Time: 2 hour
+
+
+# 07/10/21
+
+## tutorial 5
+Having issues compiling, seems to be that the threads dependancy is not installed. suggestions point to "libboost-thread" needing to be installed but so far I have not found that package. Prehaps an error with the boost installation, a setting incorrect, causing a missing library? 

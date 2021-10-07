@@ -1,0 +1,3 @@
+exe hello
+  : hello.cpp
+  : <include>../../boost_1_77_0  <threading>multi ;
